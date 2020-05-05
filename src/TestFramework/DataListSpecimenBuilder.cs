@@ -30,7 +30,8 @@ namespace TestFramework
 
         protected override object Create()
         {
-            return _rnd.Next(Data.List.Count);
+            int index = _rnd.Next(Data.List.Count);
+            return Data.List[index];
         }
 
         protected abstract IFieldList Fields { get; }

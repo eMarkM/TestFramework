@@ -15,7 +15,7 @@ namespace TestFramework.Test
             var sut = fixture.Create<PropertyObjectToFill>();
 
             Assert.Equal("test", sut.Test);
-            Assert.NotEqual("test", sut.NotTest);
+            Assert.NotEqual("test", sut.SomethingElse);
         }
 
         [Fact]
@@ -28,27 +28,7 @@ namespace TestFramework.Test
 
             Assert.Equal("test", sut.Test);
             Assert.NotEqual("test", sut.NotTest);
-        }
-    }
-
-    class PropertyObjectToFill
-    {
-        public string Test { get; set; }
-
-        public string NotTest { get; set; }
-    }
-
-    class ParamObjectToFill
-    {
-        public ParamObjectToFill(string test, string notTest)
-        {
-            Test = test;
-            NotTest = notTest;
-        }
-
-        public string Test { get; }
-
-        public string NotTest { get; }
+        }    
     }
 
     class DataTestBuilder : AbstractSpecimenBuilder
