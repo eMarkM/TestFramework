@@ -12,6 +12,10 @@ namespace TestFramework.Data
             fixture.Customizations.Add(new CityBuilder());
             fixture.Customizations.Add(new StateBuilder());
             fixture.Customizations.Add(new ZipCodeBuilder());
+            fixture.Customizations.Add(new CompanyNameBuilder());
+            fixture.Customizations.Add(new FirstNameBuilder());
+            fixture.Customizations.Add(new LastNameBuilder());
+            fixture.Customizations.Add(new LongTextBuilder());
         }
     }
 }
