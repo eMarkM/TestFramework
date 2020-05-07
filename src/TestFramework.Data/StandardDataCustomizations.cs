@@ -1,5 +1,4 @@
 ﻿using AutoFixture;
-using System;
 using TestFramework.Data.Builders;
 
 namespace TestFramework.Data
@@ -10,6 +9,9 @@ namespace TestFramework.Data
         {
 
             fixture.Customizations.Add(new AddressBuilder());
+            fixture.Customizations.Add(new CityBuilder());
+            fixture.Customizations.Add(new StateBuilder());
+            fixture.Customizations.Add(new ZipCodeBuilder());
         }
     }
 }
