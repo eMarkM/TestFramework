@@ -2,7 +2,7 @@
 
   <PropertyGroup>
 	<TargetFramework>netstandard2.1</TargetFramework>
-	<PackageId>TestFramework.Data</PackageId>
+	<PackageId>Emarkm.TestFramework.Data</PackageId>
 	<Version>1.0.0-caligula</Version>
 	<Authors>Ed May</Authors>
 	<Description>Test framework using xUnit, AutoFixture and Moq for creating tests in declarative way for easy maintanence.</Description>
