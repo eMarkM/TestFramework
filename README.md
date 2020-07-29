@@ -4,9 +4,9 @@ Unit testing is an integral part of any successful software project.  But tests 
 
 The framework uses the following technologies to enable rapid development and easy to maintain tests.  XUnit Theories are combined with AutoFixture and the Moq mocking framework to create an easy to use declarative style of unit testing code.
 
-[XUnit](https://xunit.github.io/) - unit test framework 
-[Moq](https://github.com/moq/moq4)
-[AutoFixture](https://github.com/AutoFixture/AutoFixture) - make "Arrange" phase of unit tests maintainable
+- [XUnit](https://xunit.github.io/) - unit test framework 
+- [Moq](https://github.com/moq/moq4) - mocking framework
+- [AutoFixture](https://github.com/AutoFixture/AutoFixture) - make "Arrange" phase of unit tests maintainable
 
 # Getting Started
 These packages are available:
