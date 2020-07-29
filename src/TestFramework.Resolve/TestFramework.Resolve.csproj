@@ -2,23 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-	  <PackageId>Emarkm.TestFramework</PackageId>
+	  <PackageId>Emarkm.TestFramework.Resolve</PackageId>
 	  <Version>1.0.0-caligula</Version>
 	  <Authors>Ed May</Authors>
-	  <Description>Test framework using xUnit, and AutoFixture creating tests in declarative way for easy maintanence.</Description>
+	  <Description>Test framework using xUnit, AutoFixture and Moq for creating tests in declarative way for easy maintanence.</Description>
 	  <PackageReleaseNotes>Beta release</PackageReleaseNotes>
-	  <Copyright>Copyright 2020</Copyright>
-	  <PackageTags>testing xunit autofixture</PackageTags>
+	  <Copyright>Copyright 20202</Copyright>
+	  <PackageTags>testing xunit autofixture moq</PackageTags>
 	  <IsPackable>true</IsPackable>
 	  <PackageProjectUrl>https://github.com/eMarkM/TestFramework</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/eMarkM/TestFramework</RepositoryUrl>
 	  <RepositoryType>Git</RepositoryType>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoFixture" Version="4.13.0" />
+    <PackageReference Include="AutoFixture.Xunit2" Version="4.13.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestFramework\TestFramework.csproj" />
   </ItemGroup>
 
 </Project>
