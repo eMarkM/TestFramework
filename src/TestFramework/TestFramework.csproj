@@ -7,12 +7,14 @@
 	  <Authors>Ed May</Authors>
 	  <Description>Test framework using xUnit, and AutoFixture creating tests in declarative way for easy maintanence.</Description>
 	  <PackageReleaseNotes>Beta release</PackageReleaseNotes>
-	  <Copyright>Copyright 20202</Copyright>
+	  <Copyright>Copyright 2020</Copyright>
 	  <PackageTags>testing xunit autofixture</PackageTags>
 	  <IsPackable>true</IsPackable>
 	  <PackageProjectUrl>https://github.com/eMarkM/TestFramework</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/eMarkM/TestFramework</RepositoryUrl>
 	  <RepositoryType>Git</RepositoryType>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <ItemGroup>

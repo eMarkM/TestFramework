@@ -24,9 +24,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\TestFramework.Data\TestFramework.Data.csproj" />
+    <ProjectReference Include="..\..\src\TestFramework.Moq\TestFramework.Moq.csproj" />
+    <ProjectReference Include="..\..\src\TestFramework.Resolve\TestFramework.Resolve.csproj" />
     <ProjectReference Include="..\..\src\TestFramework\TestFramework.csproj" />
-    <ProjectReference Include="..\..\TestFramework.Moq\TestFramework.Moq.csproj" />
-    <ProjectReference Include="..\..\TestFramework.Resolve\TestFramework.Resolve.csproj" />
   </ItemGroup>
 
 </Project>

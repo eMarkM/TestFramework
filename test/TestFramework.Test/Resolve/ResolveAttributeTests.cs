@@ -4,7 +4,7 @@ using AutoFixture.Xunit2;
 using TestFramework.Resolve;
 using Xunit;
 
-namespace Hps.Common.TestFramework.Tests.Attributes
+namespace TestFramework.Tests.Attributes
 {
     public class ResolveAttributeTests
     {
