@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace TestFramework
@@ -7,7 +8,7 @@ namespace TestFramework
     {
         static Random _rnd = new Random();  // TODO improve with "cryto" impl of Random
 
-        public static T NextElement<T>(this Collection<T> source)
+        public static T NextElement<T>(this List<T> source)
         {
             int index = _rnd.Next(source.Count);
             return source[index];

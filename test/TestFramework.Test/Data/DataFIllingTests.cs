@@ -7,7 +7,7 @@ using Xunit;
 namespace TestFramework.Test.Data
 {
     public class DataFIllingTests
-    {
+    {        
         [Theory, AutoData]
         public void Address_Data_Filled_Out(
             [Data] StandardData sut)
@@ -71,6 +71,32 @@ namespace TestFramework.Test.Data
         {
             var list = new LoremDataList().List;
             Assert.Contains(sut.Description, list);
+        }
+
+        [Theory, AutoData]
+        public void Email_Data_Filled_Out(
+           [Data] StandardData sut)
+        {
+            const string emailRegEx = @"[-0-9a-zA-Z.'+_]+@[-0-9a-zA-Z.+_]+\.[a-zA-Z]{2,4}";
+            Assert.Matches(emailRegEx, sut.EMail);
+        }
+
+        [Theory, AutoData]
+        public void Phone_Data_Filled_Out(
+           [Data] StandardData sut)
+        {
+            int intValue = Convert.ToInt32(sut.PhoneNumber);
+
+            Assert.True(intValue >= 1000000000);
+            Assert.True(intValue <= 2000000000);
+        }
+
+        [Theory, AutoData]
+        public void UserId_Data_Filled_Out(
+           [Data] StandardData sut)
+        {
+            var list = new LastNameDataList().List;
+            Assert.Contains(sut.LoginId[1..], list);
         }
     }
 }
