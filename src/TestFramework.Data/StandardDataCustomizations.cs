@@ -16,6 +16,9 @@ namespace TestFramework.Data
             fixture.Customizations.Add(new FirstNameBuilder());
             fixture.Customizations.Add(new LastNameBuilder());
             fixture.Customizations.Add(new LongTextBuilder());
+            fixture.Customizations.Add(new EmailBuilder());
+            fixture.Customizations.Add(new PhoneBuilder());
+            fixture.Customizations.Add(new UserIdBuilder());
         }
     }
 }

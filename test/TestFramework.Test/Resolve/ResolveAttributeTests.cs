@@ -1,5 +1,4 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 using AutoFixture.Xunit2;
 using TestFramework.Resolve;
 using Xunit;
@@ -56,22 +55,6 @@ namespace TestFramework.Tests.Attributes
         public override Assembly GetExecutingAssembly()
         {
             return Assembly.GetExecutingAssembly();
-        }
-    }
-
-    public class TestResolver : IDependencyResolver
-    {
-        public object Resolve(Type type)
-        {
-            if (type == typeof(ObjectWithDependencies))
-            {
-                return new ObjectWithDependencies(new SomeDepImpl());
-            }
-            if (type == typeof(IFoo))
-            {
-                return new Foo();
-            }
-            return null;
         }
     }
 
