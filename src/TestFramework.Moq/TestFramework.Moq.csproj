@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-	  <TargetFramework>netstandard2.1</TargetFramework>
+	  <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
 	  <PackageId>Emarkm.TestFramework.Moq</PackageId>
-	  <Version>1.0.0</Version>
+	  <Version>1.0.1</Version>
 	  <Authors>Ed May</Authors>
 	  <Description>Test framework using xUnit, AutoFixture and Moq for creating tests in declarative way for easy maintanence.</Description>
 	  <PackageReleaseNotes>Beta release</PackageReleaseNotes>
@@ -17,8 +17,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoFixture.AutoMoq" Version="4.13.0" />
-    <PackageReference Include="AutoFixture.Xunit2" Version="4.13.0" />
+    <PackageReference Include="AutoFixture.AutoMoq" Version="4.15.0" />
+    <PackageReference Include="AutoFixture.Xunit2" Version="4.15.0" />
   </ItemGroup>
 
 </Project>
